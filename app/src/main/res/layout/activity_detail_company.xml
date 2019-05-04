@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailCompanyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/category_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_margin="16dp"
+            tools:text="Institucion"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"/>
+
+
+        <ImageView
+            android:id="@+id/picture_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            tools:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/name_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="45dp"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            tools:text="Britanico"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"/>
+
+        <TextView
+            android:id="@+id/direccion_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="italic"
+            tools:text="Jr:Javier Prado #966"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/primary_dark"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:text="Telefono : "/>
+
+        <TextView
+            android:id="@+id/phone_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            tools:text="966500755"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/primary_dark"
+            android:text="Correo : "/>
+        <TextView
+            android:id="@+id/email_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            tools:text="britanico@gmail.com"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/primary_dark"
+            android:text="Pagina web : "/>
+
+        <TextView
+            android:id="@+id/url_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            tools:text="www.britanico.com"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/primary_dark"
+            android:text="Descripcion : "/>
+        <TextView
+            android:id="@+id/info_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            tools:text="Institucion dedicada a enseñar ingles para todo tipo de edad"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/color_horizontal_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mobilphone_implicito"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/color_button_call"
+                    android:background="@drawable/border_radius2"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:text="llamar"/>
+
+                <Button
+                    android:id="@+id/web_implicito"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border_radius2"
+                    android:text="web"
+                    android:textColor="@color/colortext_button_web"
+                    android:drawableLeft="@drawable/ic_web"/>
+                <Button
+                    android:id="@+id/share_implicito"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border_radius2"
+                    android:text="share"
+                    android:textColor="@color/colortext_button_share"
+                    android:drawableLeft="@drawable/ic_share"/>
+
+                <Button
+                    android:id="@+id/message_implicito"
+                    android:layout_width="100dp"
+                    android:layout_below="@+id/cargo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_radius2"
+                    android:layout_margin="10dp"
+                    android:text="Sms"
+                    android:textColor="@color/colortext_button_message"
+                    android:drawableLeft="@drawable/ic_message"/>
+                <Button
+                    android:id="@+id/email_implicito"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colortext_button_email"
+                    android:background="@drawable/border_radius2"
+                    android:text="email"
+                    android:drawableLeft="@drawable/ic_email"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>
